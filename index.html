@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Day ❤️</title>
+  </head>
+  <style>
+    body {
+        background-color: pink;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: xx-large;
+        border: 1px solid;
+        padding: 5px;
+        border-radius: 100px;
+
+    }
+    h2 {
+        text-align: center;
+        line-height: normal;
+        text-decoration: underline;
+        padding: 5px 10px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        padding: 3px 6px;
+    
+    }
+
+    p {
+        text-align: center;
+        line-height: normal;
+        font-size: medium;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        border: 50px;
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, 2);
+        padding: 10px 15px;
+        background-color: red;
+        border-radius: 5px;
+        transition: all 100ms ease-in-out ;
+    }
+    button:hover {
+        cursor: pointer;
+    }
+
+    .learnmore {
+        text-decoration: underline;
+        font-size: small;
+        border-radius: 20px;
+        color: blue;
+    }
+
+    .content {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 40px;
+    }
+
+  </style>
+  <body>
+    <div class="content">
+    <h1>Happy Valentine's Day ❤️</h1>
+    <h2>14 February Saint Valentine's Day</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/928/original/valentines_Day_1.jpeg?1706094679 "
+      alt=" Valentine's Day"
+      width="500"
+    />
+    <p>
+      Valentine's Day, also called Saint Valentine's Day or the Feast of Saint
+      Valentine, is celebrated annually on February 14. When lovers express
+      their affection with greetings and gifts.
+      </br>
+      <a href="https://en.wikipedia.org/wiki/Valentine's_Day" target="_blank" class="learnmore">
+        learn more on wikipedia
+      </a>
+    </p>
+    <button class= "buygifts-button">
+        Buy valentines Day gifts
+    </button>
+   <p>This page was built by Queen Litsue </p> 
+    </div>
+    <script>
+        function buygifts() {
+            let name=prompt("What is your name?");
+            
+            if (name.length){     
+            alert("Thank you" +  name  + "! We will be in touch soon,please feel free to pick and buy a gift 💝");
+          } else{
+            alert("You snooze,you lose!");
+          }
+
+         }
+        let buygiftsButton =document.querySelector(".buygifts-button");
+        buygiftsButton.addEventListener("click", buygifts);
+    </script>
+  </body>
+</html>
